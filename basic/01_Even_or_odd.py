@@ -24,5 +24,5 @@ class Solution:
 obj = Solution()    
 #print(obj.isEven(10))
 
-# we can try to add user defined value via use of input()
+# we can try to add user defined value via use of int(input())
 print(obj.isEven(int(input("Enter the value to check against: "))))
