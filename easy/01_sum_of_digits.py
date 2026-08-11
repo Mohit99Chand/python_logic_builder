@@ -21,13 +21,11 @@ def sumOfDigits(n):
     return sum
 
 if __name__ == "__main__":
-	n = insert(input("Enter the number " ))
+	n = int(input("Enter the number " ))
 	print(sumOfDigits(n))
 
 
-
 # Approach2:
-
 def sumOfDigits(n):
  
     if n == 0:
@@ -35,19 +33,19 @@ def sumOfDigits(n):
     return n % 10 + sumOfDigits(n // 10)
 
 if __name__ == "__main__":
-    num = int(insert("Enter the no"))
+    num = int(input("Enter the no: "))
     print(sumOfDigits(num))
 
 
 
 # Approach3:
 def sumOfDigits(n):
-     s = str(n)
     sum = 0
-    for ch in s:
+    for ch in n:
         sum += int(ch)
-
     return sum
 
-num = int(input("Enter the number "))
+num = input("Enter the number: ")
 print(sumOfDigits(num))
+
+
