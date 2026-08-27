@@ -1,0 +1,1 @@
+# check if a no is palindrom or not
