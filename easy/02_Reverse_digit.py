@@ -40,7 +40,7 @@ if __name__ == "__main__":
     print(rev_num(value))
 """
 
-#Approach 3:
+#Approach 3: using negative indexing.
 """
 def rev_num(val):
     return val[::-1]                        #Negative indexing is used to reverse the string.
