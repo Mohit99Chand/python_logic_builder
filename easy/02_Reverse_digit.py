@@ -12,7 +12,7 @@ Approach3: Using String slicing
 
 """
 
-# Approach1:
+# Approach1: Reverse digit by digit - Divide by 10 and store.
 """
 def rev_num(num):
     remind, rev_value = 0,0
@@ -29,11 +29,11 @@ if __name__ == "__main__":
     print(rev_num(n))
 """
 
-#Approach 2:
+#Approach 2: Using list and reverse function. 
 """
 def rev_num(value):
     value.reverse()
-    return ''.join(value)
+    return ''.join(value)                       # Join converts list into a string by joining.
 
 if __name__ == "__main__":
     value = list(input("Enter the number: "))
@@ -41,13 +41,14 @@ if __name__ == "__main__":
 """
 
 #Approach 3:
+"""
 def rev_num(val):
-    return val[::-1]
+    return val[::-1]                        #Negative indexing is used to reverse the string.
 
 if __name__ == "__main__":
     value = input("Enter the number: ")
     print(rev_num(value))
-
+"""
 
 
 
