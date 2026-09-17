@@ -12,3 +12,42 @@ Approach3: Using String slicing
 
 """
 
+# Approach1:
+"""
+def rev_num(num):
+    remind, rev_value = 0,0
+    while(num != 0):
+        remind = num % 10
+        num = num // 10
+        rev_value = rev_value*10 + remind 
+
+    return rev_value
+
+
+if __name__ == "__main__":
+    n = int(input("Enetr the no: "))
+    print(rev_num(n))
+"""
+
+#Approach 2:
+"""
+def rev_num(value):
+    value.reverse()
+    return ''.join(value)
+
+if __name__ == "__main__":
+    value = list(input("Enter the number: "))
+    print(rev_num(value))
+"""
+
+#Approach 3:
+def rev_num(val):
+    return val[::-1]
+
+if __name__ == "__main__":
+    value = input("Enter the number: ")
+    print(rev_num(value))
+
+
+
+
