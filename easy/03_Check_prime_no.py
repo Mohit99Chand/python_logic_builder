@@ -29,7 +29,7 @@ if __name__ == "__main__":
  if a number is prime or to factorize it by testing divisibility against smaller integers.
  Working principle: If a number n has a factor, at least one of its 
  factors must be less than or equal to the square root of n(root n)
- """
+ 
 
 def check_prime(num):
     if num < 2:
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     num = int(input("Enter the number: "))
     print(check_prime(num))
 
-
+"""
 
 #Approach 3: Optimized square root trial division
 """Optimized square root trial division is an integer factorization and primality testing
@@ -54,3 +54,16 @@ if __name__ == "__main__":
  Working principle: Any composite number must have at least one prime factor less than or equal
  to its square root, significantly reducing the number of required divisions."""
 
+def check_prime(n):
+    if (n <= 1):
+        return f"{n} is not a prime number"
+    elif (n%2 == 0 or n%3 == 0):
+        return f"{n} it is not a prime"
+    else:
+        a = n**0.5
+        while (a+2):
+            
+
+if __name__ == "__main__":
+    num = int(input("Enter the number: "))
+    print(check_prime(num))
