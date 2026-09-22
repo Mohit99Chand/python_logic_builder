@@ -52,18 +52,24 @@ if __name__ == "__main__":
  algorithm that determines if a number is prime or finds its factors by testing divisibility 
  only up to the square root of the number, rather than the number itself.   
  Working principle: Any composite number must have at least one prime factor less than or equal
- to its square root, significantly reducing the number of required divisions."""
+ to its square root, significantly reducing the number of required divisions.
 
 def check_prime(n):
-    if (n <= 1):
-        return f"{n} is not a prime number"
-    elif (n%2 == 0 or n%3 == 0):
-        return f"{n} it is not a prime"
+    if (n==2 or n==3):
+        return f"{n} is a prime number"
+    elif (n <= 1 or n%2 == 0 or n%3 == 0):
+        return f"{n} it is not a prime number"
     else:
-        a = n**0.5
-        while (a+2):
+        a = int(n**0.5)
+        for i in range(2, a+1):                                     #Range function only considers the integer value
+            if n%i == 0:
+                return f"{n} is not a prime number"
+        return f"{n} is a prime number"
+            
             
 
 if __name__ == "__main__":
     num = int(input("Enter the number: "))
     print(check_prime(num))
+
+"""
